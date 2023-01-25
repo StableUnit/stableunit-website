@@ -7,3 +7,9 @@ body {
   background: #1c182a;
   color: #8A869B;
 }
+
+.text-gradient {
+  background: linear-gradient(74.43deg, #D8ADFB -12.43%, #B8D3F6 24.51%, #A7F5D5 63.46%, #F3EFC0 82.01%, #F3B6F4 110.47%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

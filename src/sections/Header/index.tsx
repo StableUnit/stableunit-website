@@ -41,7 +41,7 @@ const Header = () => {
               const Icon = data.icon;
 
               return (
-                <div className="header__dropdown__line" onClick={onSocialClick(data.href)}>
+                <div key={data.name} className="header__dropdown__line" onClick={onSocialClick(data.href)}>
                   <Icon />
                   <div>{data.name}</div>
                 </div>
