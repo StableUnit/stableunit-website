@@ -1,10 +1,9 @@
 import React from 'react';
-import Href from "../Href";
-import {SOCIAL_NETWORKS} from "../SocialNetwork";
-import Dropdown from "../Dropdown";
+import Href from "../../components/Href";
+import {SOCIAL_NETWORKS} from "../../components/SocialNetwork";
+import Dropdown from "../../components/Dropdown";
 
 import './styles.scss';
-import {ArrowDownIcon} from "../../icons";
 
 const LINKS = [{
   text: 'GOVERNANCE',
@@ -23,7 +22,7 @@ const Header = () => {
       <div className="header">
 
         <div className="header__left">
-          <a title="Stable Unit" href="#" className="header__logo">
+          <a title="Stable Unit" href="sections/Header/index#" className="header__logo">
             <img src="./logo.svg" alt="" loading="lazy" />
           </a>
         </div>
