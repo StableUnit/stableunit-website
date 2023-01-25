@@ -1,0 +1,67 @@
+@import "src/styles/vars";
+
+.header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 80px;
+
+  user-select: none;
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    padding: 5px;
+    margin-right: 30px;
+    color: #8A869B;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__dropdown {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+    position: relative;
+
+    &-content {
+      position: absolute;
+      top: 20px;
+      border-radius: 8px;
+      background: $dark-gray;
+      padding: 2px 0;
+    }
+
+    &__line {
+      display: flex;
+      align-items: center;
+      padding: 6px 8px;
+      margin-bottom: 2px;
+
+      &:hover {
+        color: $gray2;
+
+        svg path {
+          fill: $gray2;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      svg {
+        width: 14px;
+        height: 14px;
+        margin-right: 4px;
+      }
+    }
+  }
+}
