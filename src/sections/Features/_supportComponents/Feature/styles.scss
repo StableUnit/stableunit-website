@@ -1,0 +1,25 @@
+@import "../../../../styles/vars";
+
+.feature {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 70px;
+  text-align: center;
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: white;
+    padding-top: 6px;
+  }
+
+  &__description {
+    padding-top: 6px;
+    max-width: 250px;
+  }
+
+  &__content {
+    padding-right: 65px;
+  }
+}
