@@ -1,0 +1,38 @@
+@import "../../styles/vars";
+
+.stablecoin-chart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  width: calc(100% - 80px);
+  margin: 0 auto 230px auto;
+
+  &__content {
+    width: 40%;
+
+    &__title {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 52px;
+      color: white;
+      padding-bottom: 40px;
+    }
+
+    &__description {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      padding-bottom: 30px;
+
+      &:last-child {
+        color: white;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__chart {
+    width: 40%;
+  }
+}
