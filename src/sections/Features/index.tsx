@@ -53,7 +53,7 @@ const Features = () => {
     ] as FeatureType[];
 
     return (
-        <div className="features">
+        <div className="features container">
             <div className="features__title title">The world needs resilient base assets</div>
 
             <div className="features__content">

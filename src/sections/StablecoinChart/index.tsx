@@ -64,7 +64,7 @@ const StablecoinChart = () => {
     };
 
     return (
-        <div className="stablecoin-chart">
+        <div className="stablecoin-chart container">
             <div className="stablecoin-chart__content">
                 <div className="title">DeFi is in danger</div>
                 <div className="stablecoin-chart__content__description">

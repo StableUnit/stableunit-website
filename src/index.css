@@ -21,3 +21,13 @@ body {
   color: white;
   padding-bottom: 40px;
 }
+
+.container {
+  max-width: 1280px;
+  width: calc(100% - 80px);
+  margin: 0 auto;
+}
+
+a {
+  color: #86B4F9 !important;
+}

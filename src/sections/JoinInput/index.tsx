@@ -23,7 +23,7 @@ const JoinInput = () => {
     };
 
     return (
-        <div className="join-input">
+        <div className="join-input container">
             <img src="./img/input-bg.png" alt="Background Gradient" />
             <div className="join-input__content">
                 <div className="join-input__stableunit text-gradient">StableUnit</div>
