@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 import './styles.scss';
-import {ArrowRightIcon, CoinsIcon, ContributeIcon} from "../../icons";
+import {ArrowRightIcon, ContributeIcon} from "../../icons";
 
 const JoinInput = () => {
   const [email, setEmail] = useState<string>();
@@ -24,8 +24,7 @@ const JoinInput = () => {
 
   return (
     <div className="join-input">
-      <CoinsIcon className="join-input__coins" />
-      <img src="./input-bg.jpg" alt="Background Gradient" />
+      <img src="./input-bg.png" alt="Background Gradient" />
         <div className="join-input__content">
           <div className="join-input__stableunit text-gradient">StableUnit</div>
           <div className="join-input__title">Decentralized money that you truly own</div>
