@@ -1,0 +1,21 @@
+@import "../../styles/vars";
+
+.radical {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__text {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 33px;
+      color: $gray-white;
+      padding-right: 45px;
+    }
+
+    img {
+      margin-top: -75px;
+    }
+  }
+}
