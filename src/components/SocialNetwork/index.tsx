@@ -8,7 +8,7 @@ interface SocialNetworkProps {
     height?: number;
 }
 
-export const SOCIAL_NETWORKS: Record<string, { href: string; icon: React.FunctionComponent, name: string }> = {
+export const SOCIAL_NETWORKS: Record<string, { href: string; icon: React.FunctionComponent; name: string }> = {
     tg: {
         name: "Telegram",
         href: "https://t.me/stableunit",

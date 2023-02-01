@@ -13,3 +13,11 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: white;
+  padding-bottom: 40px;
+}
