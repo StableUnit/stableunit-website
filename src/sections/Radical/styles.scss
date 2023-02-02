@@ -1,22 +1,35 @@
 @import "../../styles/vars";
 
 .radical {
+  &__description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 64px;
+  }
+
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 
     &__text {
-      font-weight: 500;
+      padding-top: 34px;
+      flex: 1;
+      font-weight: 400;
       font-size: 18px;
-      line-height: 33px;
-      color: $gray-white;
+      line-height: 24px;
       padding-right: 45px;
+      text-align: left;
     }
 
-    img {
-      margin-top: -70px;
-      width: 50%;
+    &__img {
+      flex: 1;
+      display: flex;
+      align-items: center;
     }
   }
 }

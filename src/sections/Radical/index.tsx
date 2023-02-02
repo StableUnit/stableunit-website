@@ -5,12 +5,12 @@ import "./styles.scss";
 const Radical = () => (
     <div className="radical container">
         <div className="title">Radical decentralization</div>
+        <div className="radical__description">
+            At the heart of radical decentralization is the idea of full transparency. On the blockchain, all
+            transactions are already open but control is not.
+        </div>
         <div className="radical__content">
             <div className="radical__content__text">
-                At the heart of radical decentralization is the idea of full transparency. On the blockchain , all
-                transactions are already open but control is not.
-                <br />
-                <br />
                 StableUnitDAO gives the power back to the community. Decisions are made by the collective, rather than
                 by a centralized authority. This allows for a more inclusive and democratic approach, where millions can
                 have a say in the direction and management of the protocol.
@@ -23,7 +23,9 @@ const Radical = () => (
                 <br />
                 The more you contribute - the higher voting power you have.
             </div>
-            <img src="./img/radical.png" alt="Quote" />
+            <div className="radical__content__image">
+                <img src="./img/radical.png" alt="Quote" />
+            </div>
         </div>
     </div>
 );

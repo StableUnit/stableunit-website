@@ -7,7 +7,6 @@ const Friends = () => (
     <div className="friends">
         <div className="title container">Protocol friends</div>
         <Scroller>
-            <div className="friends__text">Let’s become friends</div>
             <img className="friends__image" src="./img/friends/ambire.png" alt="Ambire" />
             <img className="friends__image" src="./img/friends/doki-doki.png" alt="Doki Doki" />
             <img className="friends__image" src="./img/friends/aura-finance.png" alt="Aura Finance" />
