@@ -64,41 +64,42 @@ const StablecoinChart = () => {
     };
 
     return (
-        <div className="stablecoin-chart container">
-            <div className="stablecoin-chart__content">
-                <div className="title">DeFi is in danger</div>
-                <div className="stablecoin-chart__content__description">
-                    The collapse of centralized organizations proved the importance of decentralization. DeFi is
-                    undeniably the future of finance. But DeFi itself is in danger because of the centralization of base
-                    assets.
+        <div className="container">
+            <div className="title">DeFi is in danger</div>
+            <div className="stablecoin-chart">
+                <div className="stablecoin-chart__content">
+                    <div className="stablecoin-chart__content__description">
+                        The collapse of centralized organizations proved the importance of decentralization. DeFi is
+                        undeniably the future of finance. But DeFi itself is in danger because of the centralization of
+                        base assets.
+                    </div>
+                    <div className="stablecoin-chart__content__description">
+                        95% of stablecoins can be frozen in one single transaction by their issuers.
+                    </div>
+                    <div className="stablecoin-chart__content__description">
+                        USD-Pro is a stablecoin from StableUnitDAO that cannot be frozen. It is overcollateralized with
+                        uncensorable assets that nobody can take from you.
+                    </div>
                 </div>
-
-                <div className="stablecoin-chart__content__description">
-                    95% of stablecoins can be frozen in one single transaction by their issuers.
+                <div className="stablecoin-chart__chart">
+                    <PieChart width={400} height={250}>
+                        <Pie
+                            activeIndex={activeIndex}
+                            activeShape={renderActiveShape}
+                            data={data}
+                            cx="50%"
+                            cy="50%"
+                            innerRadius={60}
+                            outerRadius={80}
+                            dataKey="value"
+                            onMouseEnter={onPieEnter}
+                        >
+                            {data.map((entry, index) => (
+                                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                            ))}
+                        </Pie>
+                    </PieChart>
                 </div>
-                <div className="stablecoin-chart__content__description">
-                    <b>USD-Pro is a stablecoin from StableUnitDAO that cannot be frozen.</b> It is overcollateralized
-                    with uncensorable assets that nobody can take from you.
-                </div>
-            </div>
-            <div className="stablecoin-chart__chart">
-                <PieChart width={500} height={500}>
-                    <Pie
-                        activeIndex={activeIndex}
-                        activeShape={renderActiveShape}
-                        data={data}
-                        cx="50%"
-                        cy="50%"
-                        innerRadius={60}
-                        outerRadius={80}
-                        dataKey="value"
-                        onMouseEnter={onPieEnter}
-                    >
-                        {data.map((entry, index) => (
-                            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                        ))}
-                    </Pie>
-                </PieChart>
             </div>
         </div>
     );

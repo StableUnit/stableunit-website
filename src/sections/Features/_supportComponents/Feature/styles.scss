@@ -1,25 +1,43 @@
 @import "../../../../styles/vars";
 
 .feature {
+  width: 100%;
+  background: #1F1F1F;
+  border-radius: 40px;
   display: flex;
-  padding: 10px;
-  margin-bottom: 70px;
-  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding: 30px 60px 30px 80px;
 
   &__title {
     font-weight: 700;
-    font-size: 24px;
-    line-height: 31px;
+    font-size: 32px;
+    line-height: 44px;
     color: white;
-    padding-top: 6px;
   }
 
   &__description {
-    padding-top: 6px;
-    max-width: 250px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    padding-top: 24px;
+    max-width: 480px;
   }
 
   &__content {
-    padding-right: 65px;
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  &__image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  svg {
+    width: 420px;
   }
 }

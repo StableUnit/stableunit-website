@@ -1,6 +1,6 @@
 import React from "react";
 
-import { FairImageIcon, UncensorableIcon, UncensorableImageIcon, InclusiveImageIcon } from "../../icons";
+import { FairImageIcon, UncensorableImageIcon, InclusiveImageIcon } from "../../icons";
 import Feature, { FeatureType } from "./_supportComponents/Feature";
 
 import "./styles.scss";
@@ -8,8 +8,6 @@ import "./styles.scss";
 const Features = () => {
     const data = [
         {
-            positionX: -80,
-            FeatureIcon: UncensorableIcon,
             title: "Uncensorable",
             Description: () => (
                 <div>
@@ -20,8 +18,6 @@ const Features = () => {
             Image: UncensorableImageIcon,
         },
         {
-            positionX: 80,
-            FeatureIcon: () => <img src="./img/features/Fair.png" />,
             title: "Fair",
             Description: () => (
                 <div>
@@ -35,8 +31,6 @@ const Features = () => {
             Image: FairImageIcon,
         },
         {
-            positionX: -80,
-            FeatureIcon: () => <img src="./img/features/Inclusive.png" />,
             title: "Inclusive",
             Description: () => (
                 <div>

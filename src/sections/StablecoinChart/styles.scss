@@ -4,10 +4,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom:200px;
+  margin-bottom:120px;
 
   &__content {
-    width: 45%;
+    padding-right: 120px;
 
     &__description {
       font-weight: 500;
@@ -16,6 +16,7 @@
       padding-bottom: 30px;
 
       &:last-child {
+        font-weight: bold;
         color: white;
         padding-bottom: 0;
       }
@@ -23,6 +24,6 @@
   }
 
   &__chart {
-    width: 55%;
+    width: 400px;
   }
 }

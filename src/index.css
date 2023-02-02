@@ -4,7 +4,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background: #1E1E1E;
+  background: #101010;
   color: white;
 }
 
@@ -16,14 +16,15 @@ body {
 
 .title {
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 44px;
+  line-height: 58px;
   color: white;
-  padding-bottom: 40px;
+  text-align: center;
+  padding-bottom: 64px;
 }
 
 .container {
-  max-width: 1250px;
+  max-width: 1220px;
   width: calc(100% - 80px);
   margin: 0 auto;
 }
