@@ -52,7 +52,7 @@ module.exports = {
         "react/self-closing-comp": "warn",
         "consistent-return": "warn",
         "import/prefer-default-export": "warn",
-        "react/no-array-index-key": "warn",
+        "react/no-array-index-key": "off",
         "react/prop-types": "off",
         "no-unused-vars": "off",
         "no-empty-pattern": "off",
