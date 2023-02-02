@@ -1,0 +1,16 @@
+@import "src/styles/vars";
+
+.scroller-container {
+  width: 100%;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    height: 0;
+  }
+}
+
+.scroller {
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+}

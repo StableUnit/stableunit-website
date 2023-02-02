@@ -4,22 +4,6 @@
   position: relative;
   margin-bottom: 150px;
 
-  &__scroller {
-    &-container {
-      width: calc(100% + 10px);
-      overflow: scroll;
-
-      &::-webkit-scrollbar {
-        height: 0;
-      }
-    }
-
-    display: flex;
-    align-items: center;
-    padding-left: 80px;
-    padding-bottom: 20px;
-  }
-
   &__text {
     font-weight: 700;
     font-size: 20px;

@@ -2,40 +2,26 @@
 
 .built-by {
   margin-bottom: 150px;
-  &__content {
-    display: flex;
-    justify-content: space-between;
 
-    &__text {
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 33px;
-      padding-right: 60px;
-      color: $gray-white;
-      width: 50%;
-    }
+  &__description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 800px;
+    margin: 0 auto 64px auto;
+    text-align: center;
+  }
 
-    &__partners {
-      margin-top: -10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 50%;
+  &__gift {
+    text-align: center;
+    margin-top: 64px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+  }
 
-      img {
-        width: 100%;
-      }
-
-      &__gift {
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 13px;
-        padding: 8px 6px;
-        text-align: center;
-        width: fit-content;
-        margin-top: 24px;
-      }
-    }
+  &__image {
+    padding-right: 24px;
   }
 
   &__instructions {
@@ -46,18 +32,43 @@
   }
 
   &__instruction {
+    background-size: 105%;
+    background-position: -10px -10px;
+
     margin: 12px;
-    background: linear-gradient(261.19deg, #343141 -0.71%, rgba(39, 36, 53, 0) 100%);
-    border: 2px solid #383447;
+    padding: 48px 40px;
     border-radius: 32px;
-    width: 450px;
+    width: 600px;
     box-sizing: border-box;
 
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 34px;
-    color: white;
-    text-align: center;
-    padding: 25px;
+    &__text {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 40px;
+      padding-bottom: 40px;
+    }
+
+    &__button {
+      width: 200px;
+      height: 56px;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: #101010;
+      border: 1px solid #FFFFFF;
+      border-radius: 40px;
+      cursor: pointer;
+      transition: all 250ms;
+
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+
+      &:hover {
+        border: 1px solid #101010;
+      }
+    }
   }
 }
