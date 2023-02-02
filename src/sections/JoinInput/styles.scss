@@ -3,16 +3,16 @@
 .join-input {
   position: relative;
   border-radius: 32px;
-  margin-top: 24px;
-  margin-bottom: 175px;
+  margin-bottom: 120px;
   overflow: hidden;
   text-align: center;
-  aspect-ratio: 12.8 / 5.3;
+  padding: 80px 20px;
 
   &__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   img {
@@ -27,40 +27,28 @@
     margin: auto;
   }
 
-  &__coins {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    z-index: -1;
-    max-width: 395px;
-    width: 30%;
-  }
-
-  &__stableunit {
-    text-align: center;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 42px;
-    padding-bottom: 10px;
-    padding-top: 60px;
-  }
-
   &__title {
     font-weight: 700;
-    font-size: 50px;
-    line-height: 77px;
-    color: $gray2;
-    padding-bottom: 10px;
+    font-size: 52px;
+    line-height: 64px;
+    padding-bottom: 24px;
+    max-width: 600px;
   }
 
   &__description {
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 25px;
-    color: $gray2;
-    padding-bottom: 30px;
-    width: 530px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    padding-bottom: 40px;
+    max-width: 800px;
     margin: 0 auto;
+  }
+
+  &__join {
+    padding-bottom: 16px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   &__input {
@@ -70,12 +58,12 @@
     font-size: 18px;
     line-height: 23px;
     text-transform: uppercase;
-    color: $gray2;
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 14px 0 0 14px;
-    border: none;
-    padding: 8px 24px 8px 12px;
-    width: 330px;
+    color: white;
+    background: #101010;
+    border: 1px solid #333333;
+    border-radius: 48px;
+    padding: 8px 140px 8px 12px;
+    width: 420px;
 
     &:focus {
       outline: none;
@@ -84,18 +72,31 @@
     &-container {
       display: flex;
       align-items: center;
-      margin: 0 auto 40px auto;
+      margin: 0 auto 110px auto;
+      position: relative;
     }
 
     &-button {
-      height: 68px;
-      line-height: 68px;
-      background: rgb(180 150 158);
-      border-radius: 14px;
+      position: absolute;
+      top: 4px;
+      right: 4px;
+
+      height: 60px;
+      line-height: 60px;
+      background: linear-gradient(134.08deg, #CEBBFE 5.95%, #A9DDEF 27.7%, #8EF8D3 49.89%, #F5EDBD 71.3%, #FBCAE2 96.85%);
+      border-radius: 100px;
+      width: 128px;
+      box-sizing: border-box;
+
+      font-weight: 700;
+      font-size: 14px;
+      color: #101010;
       padding: 0 15px;
-      vertical-align: center;
-      color: white;
-      margin-left: -12px;
+      cursor: pointer;
+
+      &:hover {
+        color: rgba(0,0,0, 0.7);
+      }
     }
   }
 
@@ -106,72 +107,32 @@
     margin: 0 auto;
   }
 
-  &__doc-button {
-    span {
-      font-weight: 700;
-      font-size: 12px;
-      line-height: 16px;
-      color: white;
-      z-index: 2;
-    }
-
-    svg {
-      z-index: 2;
-    }
-
-    cursor: pointer;
-    user-select: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 24px;
-    padding-right: 24px;
-    height: 56px;
-    width: 125px;
-    background: linear-gradient(74.43deg, #D8ADFB -12.43%, #B8D3F6 24.51%, #A7F5D5 63.46%, #F3EFC0 82.01%, #F3B6F4 110.47%);
-    border-radius: 80px;
-    position: relative;
-    overflow: hidden;
-
-    &:before {
-      background-color: #201D2E;
-      display: block;
-      content: "";
-      position: absolute;
-      width: calc(100% - 4px);
-      height: calc(100% - 4px);
-      top: 2px;
-      bottom: 2px;
-      left: 2px;
-      right: 2px;
-      margin: auto;
-      border-radius: 80px;
-      z-index: 0;
-    }
-  }
-
-  &__contribute-button {
+  &__button {
+    width: 185px;
+    height: 48px;
     user-select: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 24px;
-    padding-right: 24px;
-    height: 56px;
-    width: 125px;
-    border-radius: 80px;
-    position: relative;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.15);
-    margin-left: 24px;
+
+    background: #101010;
+    border: 1px solid #FFFFFF;
+    border-radius: 40px;
+
+    margin: 12px;
     cursor: pointer;
+
+    transition: all 250ms;
 
     span {
       font-weight: 700;
-      font-size: 12px;
-      line-height: 16px;
+      font-size: 14px;
+      line-height: 18px;
       color: white;
-      padding-left: 10px;
+    }
+
+    &:hover {
+      border: 1px solid #101010;
     }
   }
 }

@@ -26,24 +26,22 @@ const JoinInput = () => {
         <div className="join-input container">
             <img src="./img/input-bg.png" alt="Background Gradient" />
             <div className="join-input__content">
-                <div className="join-input__stableunit text-gradient">StableUnit</div>
                 <div className="join-input__title">Decentralized money that you truly own</div>
                 <div className="join-input__description">
                     The next generation stablecoin, overcollateralized with uncensorable assets where you get to decide
                     about its future.
                 </div>
+                <div className="join-input__join text-gradient">JOIN EARLY ACCESS WAITLIST</div>
                 <div className="join-input__input-container">
                     <input value={email} className="join-input__input" onChange={handleInputChange} />
-                    <div className="join-input__input-button">JOIN THE WAITLIST</div>
+                    <div className="join-input__input-button">JOIN</div>
                 </div>
                 <div className="join-input__buttons">
-                    <div className="join-input__doc-button" onClick={handleDocClick}>
+                    <div className="join-input__button" onClick={handleDocClick}>
                         <span>DOCUMENTATION</span>
-                        <ArrowRightIcon />
                     </div>
 
-                    <div className="join-input__contribute-button" onClick={handleContributeClick}>
-                        <ContributeIcon />
+                    <div className="join-input__button" onClick={handleContributeClick}>
                         <span>CONTRIBUTE</span>
                     </div>
                 </div>

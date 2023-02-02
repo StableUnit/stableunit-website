@@ -2,66 +2,37 @@
 
 .header {
   display: flex;
-
   align-items: center;
-  justify-content: space-between;
   padding: 40px 80px;
-
   user-select: none;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+
+    img {
+      margin-right: 16px;
+    }
+  }
 
   &__right {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding-right: 180px;
   }
 
   &__link {
     padding: 5px;
-    margin-right: 30px;
-    color: #8A869B;
+    margin-right: 14px;
+    color: white;
     text-decoration: none;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-  }
-
-  &__dropdown {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    cursor: pointer;
-    position: relative;
-
-    &-content {
-      position: absolute;
-      top: 20px;
-      border-radius: 8px;
-      background: $dark-gray;
-      padding: 2px 0;
-    }
-
-    &__line {
-      display: flex;
-      align-items: center;
-      padding: 6px 8px;
-      margin-bottom: 2px;
-
-      &:hover {
-        color: $gray2;
-
-        svg path {
-          fill: $gray2;
-        }
-      }
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-
-      svg {
-        width: 14px;
-        height: 14px;
-        margin-right: 4px;
-      }
-    }
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
