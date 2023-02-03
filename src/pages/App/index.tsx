@@ -9,6 +9,7 @@ import Radical from "../../sections/Radical";
 import Friends from "../../sections/Friends";
 import Footer from "../../sections/Footer";
 import HowItWorks from "../../sections/HowItWorks";
+import Contacts from "../../sections/Contacts";
 
 import "./styles.css";
 
@@ -23,6 +24,7 @@ const App = () => {
             <Friends />
             <HowItWorks />
             <Radical />
+            <Contacts />
             <Footer />
         </div>
     );
