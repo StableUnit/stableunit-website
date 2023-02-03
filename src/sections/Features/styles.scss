@@ -3,6 +3,10 @@
 .features {
   &__title {
     padding-bottom: 60px;
+
+    @media screen and (max-width: 1152px) {
+      padding-bottom: 40px;
+    }
   }
 
   &__content {

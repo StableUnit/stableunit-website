@@ -7,6 +7,11 @@
   text-align: center;
   padding: 80px;
 
+  @media screen and (max-width: 1152px) {
+    margin-bottom: 64px;
+    padding: 64px 0 56px 0;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -31,6 +36,12 @@
     font-size: 52px;
     line-height: 64px;
     padding-bottom: 24px;
+
+    @media screen and (max-width: 1152px) {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 52px;
+    }
   }
 
   &__description {
@@ -40,11 +51,19 @@
     padding-bottom: 80px;
     max-width: 800px;
     margin: 0 auto;
+
+    @media screen and (max-width: 1152px) {
+      font-size: 18px;
+      line-height: 24px;
+      padding-bottom: 24px;
+      max-width: 582px;
+    }
   }
 
   &__sections {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 100%;
   }
 
@@ -54,10 +73,21 @@
     line-height: 26px;
     text-align: center;
 
+    margin: 16px 8px;
+
+    @media screen and (max-width: 1152px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
     &__buttons {
       display: flex;
       justify-content: space-between;
       margin-top: 32px;
+
+      @media screen and (max-width: 1152px) {
+        margin-top: 28px;
+      }
     }
 
     &__button {
@@ -77,6 +107,12 @@
       margin-right: 24px;
 
       transition: all 250ms;
+
+      @media screen and (max-width: 1152px) {
+        width: 180px;
+        height: 48px;
+        margin-right: 16px;
+      }
 
       &--tg, &--discord {
         font-size: 18px;

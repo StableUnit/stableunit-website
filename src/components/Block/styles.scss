@@ -1,4 +1,6 @@
 .block {
+  width: 100%;
+  box-sizing: border-box;
   background: #1F1F1F;
   border-radius: 40px;
   display: flex;
@@ -7,11 +9,21 @@
   margin-bottom: 24px;
   padding: 30px 60px 30px 80px;
 
+  @media screen and (max-width: 1152px) {
+    padding: 25px 48px;
+    margin-bottom: 16px;
+  }
+
   &__title {
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
     color: white;
+
+    @media screen and (max-width: 1152px) {
+      font-size: 28px;
+      line-height: 38px;
+    }
   }
 
   &__description {
@@ -20,6 +32,13 @@
     line-height: 26px;
     padding-top: 24px;
     max-width: 490px;
+
+    @media screen and (max-width: 1152px) {
+      padding-top: 16px;
+      font-size: 16px;
+      line-height: 22px;
+      max-width: 430px;
+    }
   }
 
   &__content {
@@ -35,6 +54,6 @@
   }
 
   svg {
-    width: 420px;
+    width: 100%;
   }
 }

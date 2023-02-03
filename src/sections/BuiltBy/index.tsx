@@ -5,7 +5,7 @@ import Scroller from "../../components/Scroller";
 
 const BuiltBy = () => (
     <div className="built-by">
-        <div className="title">Built by</div>
+        <div className="built-by__title title">Built by</div>
         <div className="built-by__description">
             StableUnit was founded by a world class team of crypto native supercoders and early employees of popular
             DeFi apps. Core team members developed smart contracts that surpassed $1 billion in stablecoin volume and
@@ -23,7 +23,7 @@ const BuiltBy = () => (
             </a>
             , we have a gift for you
         </div>
-        <div className="built-by__instructions">
+        <div className="built-by__instructions container">
             <div className="built-by__instruction" style={{ backgroundImage: "url('./img/step-bg.png')" }}>
                 <div className="built-by__instruction__text">
                     Introduce yourself in the discord to start your DAO journey and get your SU DAO NFT.

@@ -4,12 +4,15 @@
   position: relative;
   margin-bottom: 150px;
 
-  &__text {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
-    width: 80px;
-    color: white;
+  @media screen and (max-width: 1152px) {
+    margin-bottom: 100px;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 
   &__image {

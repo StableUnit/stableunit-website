@@ -21,12 +21,25 @@ body {
   color: white;
   text-align: center;
   padding-bottom: 64px;
+
+  @media screen and (max-width: 1152px) {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 52px;
+    padding-bottom: 40px;
+  }
 }
 
 .container {
   max-width: 1220px;
   width: calc(100% - 80px);
   margin: 0 auto;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 1152px) {
+    margin: 0 88px;
+    width: calc(100% - 176px);
+  }
 }
 
 a {
