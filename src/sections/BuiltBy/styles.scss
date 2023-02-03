@@ -28,6 +28,10 @@
       line-height: 24px;
       margin-bottom: 48px;
     }
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 40px;
+    }
   }
 
   &__gift {
@@ -42,6 +46,10 @@
       font-size: 20px;
       line-height: 28px;
     }
+
+    @media screen and (max-width: 768px) {
+      margin-top: 40px;
+    }
   }
 
   &__image {
@@ -49,6 +57,10 @@
 
     @media screen and (max-width: 1152px) {
       padding-right: 16px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 156px;
     }
   }
 
@@ -67,9 +79,9 @@
   &__instruction {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 135%;
+    background-size: 145%;
 
-    margin: 0 24px 24px 0;
+    margin: 12px;
     padding: 48px 40px;
     border-radius: 32px;
     width: 600px;
@@ -85,10 +97,6 @@
 
     @media screen and (max-width: 1098px) {
       height: 280px;
-    }
-
-    &:last-child {
-      margin: 0 0 24px 0;
     }
 
     &__text {

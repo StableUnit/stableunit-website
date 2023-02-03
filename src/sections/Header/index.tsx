@@ -22,7 +22,7 @@ const LINKS = [
 ];
 
 const Header = () => (
-    <div className="header">
+    <div className="header container">
         <div className="header__left">
             <img src="./logo.svg" alt="" loading="lazy" />
             <div>StableUnit</div>

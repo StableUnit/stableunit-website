@@ -28,6 +28,12 @@ body {
     line-height: 52px;
     padding-bottom: 40px;
   }
+
+  @media screen and (max-width: 768px) {
+    font-size: 32px;
+    line-height: 46px;
+    padding-bottom: 32px;
+  }
 }
 
 .container {
@@ -39,6 +45,11 @@ body {
   @media screen and (max-width: 1152px) {
     margin: 0 88px;
     width: calc(100% - 176px);
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 0 40px;
+    width: calc(100% - 80px);
   }
 }
 

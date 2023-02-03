@@ -3,11 +3,11 @@
 .header {
   display: flex;
   align-items: center;
-  padding: 40px 80px;
+  padding: 40px 0;
   user-select: none;
 
   @media screen and (max-width: 1152px) {
-    padding: 24px 88px;
+    padding: 24px 0;
   }
 
   &__left {
@@ -39,6 +39,10 @@
 
     @media screen and (max-width: 1152px) {
       padding-right: 157px;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
     }
   }
 

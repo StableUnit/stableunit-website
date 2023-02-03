@@ -10,8 +10,13 @@
   padding: 30px 60px 30px 80px;
 
   @media screen and (max-width: 1152px) {
-    padding: 25px 48px;
+    padding: 15px 48px;
     margin-bottom: 16px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 20px 32px;
+    flex-wrap: wrap-reverse;
   }
 
   &__title {
@@ -39,6 +44,11 @@
       line-height: 22px;
       max-width: 430px;
     }
+
+    @media screen and (max-width: 768px) {
+      min-width: 190px;
+      padding-bottom: 5px;
+    }
   }
 
   &__content {
@@ -51,6 +61,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 250px;
   }
 
   svg {

@@ -6,7 +6,7 @@ import Scroller from "../../components/Scroller";
 const BuiltBy = () => (
     <div className="built-by">
         <div className="built-by__title title">Built by</div>
-        <div className="built-by__description">
+        <div className="built-by__description container">
             StableUnit was founded by a world class team of crypto native supercoders and early employees of popular
             DeFi apps. Core team members developed smart contracts that surpassed $1 billion in stablecoin volume and
             are now disrupting stablecoins and the future of money.
@@ -16,7 +16,7 @@ const BuiltBy = () => (
                 <img className="built-by__image" src={`./img/built/${n + 1}.png`} alt="Built by" />
             ))}
         </Scroller>
-        <div className="built-by__gift">
+        <div className="built-by__gift container">
             Are you a 10X Engineer? Join{" "}
             <a href="https://discord.gg/WrCrCW6F4c" target="_blank" rel="noreferrer">
                 #dev

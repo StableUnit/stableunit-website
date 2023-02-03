@@ -11,6 +11,10 @@
     margin-bottom: 64px;
     padding: 64px 0 56px 0;
   }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 40px;
+    padding: 64px 20px 40px 20px;
+  }
 
   &__content {
     display: flex;
@@ -78,6 +82,10 @@
     @media screen and (max-width: 1152px) {
       font-size: 18px;
       line-height: 24px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+      margin: 24px 8px;
     }
 
     &__buttons {

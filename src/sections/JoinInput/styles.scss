@@ -11,6 +11,11 @@
     margin-bottom: 100px;
   }
 
+  @media screen and (max-width: 768px) {
+    padding: 80px 20px;
+    margin-bottom: 80px;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -128,6 +133,10 @@
         height: 40px;
         line-height: 40px;
         font-size: 12px;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 150px;
       }
 
       &:hover {
