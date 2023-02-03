@@ -1,7 +1,7 @@
 import React from "react";
 
 import { FairImageIcon, UncensorableImageIcon, InclusiveImageIcon } from "../../icons";
-import Feature, { FeatureType } from "./_supportComponents/Feature";
+import Block, { BlockType } from "../../components/Block";
 
 import "./styles.scss";
 
@@ -44,7 +44,7 @@ const Features = () => {
             ),
             Image: InclusiveImageIcon,
         },
-    ] as FeatureType[];
+    ] as BlockType[];
 
     return (
         <div className="features container">
@@ -52,7 +52,7 @@ const Features = () => {
 
             <div className="features__content">
                 {data.map((v) => (
-                    <Feature key={v.title} {...v} />
+                    <Block key={v.title} {...v} />
                 ))}
             </div>
         </div>

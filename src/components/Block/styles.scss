@@ -1,7 +1,4 @@
-@import "../../../../styles/vars";
-
-.feature {
-  width: 100%;
+.block {
   background: #1F1F1F;
   border-radius: 40px;
   display: flex;
@@ -22,7 +19,7 @@
     font-size: 20px;
     line-height: 26px;
     padding-top: 24px;
-    max-width: 480px;
+    max-width: 490px;
   }
 
   &__content {

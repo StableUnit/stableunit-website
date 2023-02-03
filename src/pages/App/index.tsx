@@ -8,6 +8,7 @@ import BuiltBy from "../../sections/BuiltBy";
 import Radical from "../../sections/Radical";
 import Friends from "../../sections/Friends";
 import Footer from "../../sections/Footer";
+import HowItWorks from "../../sections/HowItWorks";
 
 import "./styles.css";
 
@@ -20,6 +21,7 @@ const App = () => {
             <Features />
             <BuiltBy />
             <Friends />
+            <HowItWorks />
             <Radical />
             <Footer />
         </div>
