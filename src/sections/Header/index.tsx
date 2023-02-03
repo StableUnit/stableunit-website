@@ -29,13 +29,11 @@ const Header = () => (
         </div>
 
         <div className="header__right">
-            <div>
-                {LINKS.map((link) => (
-                    <a className="header__link" href={link.href}>
-                        {link.text}
-                    </a>
-                ))}
-            </div>
+            {LINKS.map((link) => (
+                <a className="header__link" href={link.href}>
+                    {link.text}
+                </a>
+            ))}
         </div>
     </div>
 );

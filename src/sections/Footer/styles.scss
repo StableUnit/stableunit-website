@@ -1,0 +1,45 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+  user-select: none;
+
+  &__right,
+  &__left,
+  &__center {
+    width: 285px;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+
+    img {
+      margin-right: 16px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__link {
+    padding: 5px;
+    margin-right: 26px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
