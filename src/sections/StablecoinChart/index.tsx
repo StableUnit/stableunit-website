@@ -10,9 +10,9 @@ const StablecoinChart = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const data = [
         { name: "Cryptocurrencies", value: 80 },
-        { name: "Stablecoins", value: 10 },
+        { name: "Stablecoins", value: 11 },
         { name: "Decentralized Stablecoins with centralized collateral", value: 6 },
-        { name: "Decentralized and uncensorable stablecoins", value: 4 },
+        { name: "Decentralized and uncensorable stablecoins", value: 3 },
     ];
 
     const { isMobile } = useDevice();

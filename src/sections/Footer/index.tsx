@@ -19,7 +19,7 @@ const Footer = () => (
             <img src="./logo.svg" alt="" loading="lazy" />
             <div>StableUnit</div>
         </div>
-        <div className="footer__center">© 2021 StableUnit | All rights reserved.</div>
+        <div className="footer__center">© 2023 StableUnit | All rights reserved.</div>
 
         <div className="footer__right">
             {LINKS.map((link) => (

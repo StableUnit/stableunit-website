@@ -99,9 +99,10 @@
   }
 
   &__instruction {
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
-    background-size: 145%;
+    background-size: cover;
+    border: 1px solid rgba(255,255,255, 0.2);
 
     margin: 12px;
     padding: 48px 40px;

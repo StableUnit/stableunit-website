@@ -24,13 +24,13 @@ const BuiltBy = () => (
             , we have a gift for you
         </div>
         <div className="built-by__instructions container">
-            <div className="built-by__instruction" style={{ backgroundImage: "url('./img/step-bg.png')" }}>
+            <div className="built-by__instruction" style={{ backgroundImage: "url('./img/step-bg.svg')" }}>
                 <div className="built-by__instruction__text">
                     Introduce yourself in the discord to start your DAO journey and get your SU DAO NFT.
                 </div>
                 <div className="built-by__instruction__button">GET SU DAO NFT</div>
             </div>
-            <div className="built-by__instruction" style={{ backgroundImage: "url('./img/step-bg.png')" }}>
+            <div className="built-by__instruction" style={{ backgroundImage: "url('./img/step-bg.svg')" }}>
                 <div className="built-by__instruction__text">
                     For any other type of contribution or inquiry, join the Stable Unit telegram and meet the team.
                 </div>
