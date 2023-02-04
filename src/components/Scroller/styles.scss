@@ -3,6 +3,7 @@
 .scroller-container {
   width: 100%;
   overflow: auto;
+  scrollbar-width: none;
 
   &::-webkit-scrollbar {
     height: 0;
