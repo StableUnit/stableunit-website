@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import "./styles.scss";
-import { ArrowRightIcon, ContributeIcon } from "../../icons";
 
 const JoinInput = () => {
     const [email, setEmail] = useState<string>();
@@ -33,7 +32,12 @@ const JoinInput = () => {
                 </div>
                 <div className="join-input__join text-gradient">JOIN EARLY ACCESS WAITLIST</div>
                 <div className="join-input__input-container">
-                    <input value={email} className="join-input__input" onChange={handleInputChange} />
+                    <input
+                        value={email}
+                        className="join-input__input"
+                        onChange={handleInputChange}
+                        placeholder="Email"
+                    />
                     <div className="join-input__input-button">JOIN</div>
                 </div>
                 <div className="join-input__buttons">
