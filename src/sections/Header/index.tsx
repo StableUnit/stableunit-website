@@ -52,7 +52,7 @@ const Header = () => {
 
                 <div className="header__right">
                     {LINKS.map((link) => (
-                        <a className="header__link" href={`#${link.id}`} onClick={openLink(link.id)}>
+                        <a key={link.text} className="header__link" href={`#${link.id}`} onClick={openLink(link.id)}>
                             {link.text}
                         </a>
                     ))}
@@ -65,7 +65,7 @@ const Header = () => {
                 <div className="menu-modal">
                     <div className="menu-modal__content">
                         {LINKS.map((link) => (
-                            <div className="menu-modal__content__link" onClick={openLink(link.id)}>
+                            <div key={link.text} className="menu-modal__content__link" onClick={openLink(link.id)}>
                                 {link.text}
                             </div>
                         ))}

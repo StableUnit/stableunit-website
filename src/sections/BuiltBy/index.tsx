@@ -13,7 +13,7 @@ const BuiltBy = () => (
         </div>
         <Scroller>
             {Array.from(Array(9).keys()).map((n) => (
-                <img className="built-by__image" src={`./img/built/${n + 1}.png`} alt="Built by" />
+                <img key={n} className="built-by__image" src={`./img/built/${n + 1}.png`} alt="Built by" />
             ))}
         </Scroller>
         <div className="built-by__gift container">

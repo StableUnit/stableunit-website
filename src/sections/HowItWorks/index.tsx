@@ -68,8 +68,8 @@ const HowItWorks = () => {
             <div className="title">How StableUnit works</div>
 
             <div className="how-it-works__content">
-                {data.map((v) => (
-                    <Block key={v.title} {...v} />
+                {data.map((v, index) => (
+                    <Block key={index} {...v} />
                 ))}
             </div>
         </div>

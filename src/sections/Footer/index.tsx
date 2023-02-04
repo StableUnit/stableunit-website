@@ -23,7 +23,7 @@ const Footer = () => (
 
         <div className="footer__right">
             {LINKS.map((link) => (
-                <a className="footer__link" href={link.href} target="_blank" rel="noreferrer">
+                <a key={link.text} className="footer__link" href={link.href} target="_blank" rel="noreferrer">
                     {link.text}
                 </a>
             ))}

@@ -105,6 +105,10 @@
       font-size: 15px;
       margin: 24px 0;
       width: 100%;
+
+      &:last-child {
+        margin-top: -8px;
+      }
     }
 
     &__buttons {

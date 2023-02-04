@@ -24,5 +24,5 @@ export const useDimensions = () => {
 export const useDevice = () => {
     const { width } = useDimensions();
 
-    return { isMobile: width < 670 };
+    return { isMobile: width < 475 };
 };

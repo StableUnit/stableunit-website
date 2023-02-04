@@ -55,16 +55,16 @@
   }
 
   &__chart {
+    display: flex;
+    justify-content: center;
     width: 400px;
 
     @media screen and (max-width: 475px) {
       width: calc(100% + 48px);
-      display: flex;
-      justify-content: center;
+    }
 
-      svg {
-        overflow: visible;
-      }
+    svg {
+      overflow: visible;
     }
   }
 }
