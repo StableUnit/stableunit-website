@@ -4,7 +4,7 @@ import "./styles.scss";
 
 const Friends = () => (
     <div className="friends container">
-        <div className="title">Protocol friends</div>
+        <div className="friends__title title">Protocol friends</div>
         <div className="friends__content">
             <img className="friends__image" src="./img/friends/ambire.png" alt="Ambire" />
             <img className="friends__image" src="./img/friends/doki-doki.png" alt="Doki Doki" />

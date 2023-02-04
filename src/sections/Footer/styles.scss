@@ -11,6 +11,11 @@
     padding-bottom: 70px;
   }
 
+  @media screen and (max-width: 475px) {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
   &__right,
   &__left,
   &__center {
@@ -53,6 +58,12 @@
       bottom: 30px;
       left: 50%;
       transform: translate(-50%);
+    }
+
+    @media screen and (max-width: 475px) {
+      position: static;
+      transform: none;
+      padding: 16px 0 8px 0;
     }
   }
 

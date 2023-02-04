@@ -11,6 +11,10 @@
     @media screen and (max-width: 768px) {
       padding-bottom: 32px;
     }
+
+    @media screen and (max-width: 475px) {
+      padding-bottom: 24px;
+    }
   }
 
   &__content {
@@ -21,6 +25,9 @@
 
     @media screen and (max-width: 768px) {
       margin-bottom: 80px;
+    }
+    @media screen and (max-width: 475px) {
+      margin-bottom: 48px;
     }
   }
 }

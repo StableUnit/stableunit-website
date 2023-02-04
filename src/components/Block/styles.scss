@@ -19,6 +19,11 @@
     flex-wrap: wrap-reverse;
   }
 
+  @media screen and (max-width: 475px) {
+    padding: 12px 24px 24px 24px;
+    flex-wrap: wrap-reverse;
+  }
+
   &__title {
     font-weight: 700;
     font-size: 32px;
@@ -28,6 +33,12 @@
     @media screen and (max-width: 1152px) {
       font-size: 28px;
       line-height: 38px;
+      padding-top: 8px;
+    }
+
+    @media screen and (max-width: 475px) {
+      font-size: 22px;
+      line-height: 30px;
     }
   }
 
@@ -48,6 +59,12 @@
     @media screen and (max-width: 768px) {
       min-width: 190px;
       padding-bottom: 5px;
+    }
+
+    @media screen and (max-width: 475px) {
+      min-width: 150px;
+      font-size: 14px;
+      line-height: 18px;
     }
   }
 

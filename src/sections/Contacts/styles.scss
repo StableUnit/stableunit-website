@@ -15,6 +15,9 @@
     margin-bottom: 40px;
     padding: 64px 20px 40px 20px;
   }
+  @media screen and (max-width: 475px) {
+    padding: 32px 16px 0 16px;
+  }
 
   &__content {
     display: flex;
@@ -46,6 +49,11 @@
       font-size: 36px;
       line-height: 52px;
     }
+
+    @media screen and (max-width: 475px) {
+      font-size: 26px;
+      line-height: 32px;
+    }
   }
 
   &__description {
@@ -61,6 +69,12 @@
       line-height: 24px;
       padding-bottom: 24px;
       max-width: 582px;
+    }
+
+    @media screen and (max-width: 475px) {
+      font-size: 15px;
+      line-height: 20px;
+      padding-bottom: 0;
     }
   }
 
@@ -87,6 +101,11 @@
       font-size: 18px;
       margin: 24px 8px;
     }
+    @media screen and (max-width: 475px) {
+      font-size: 15px;
+      margin: 24px 0;
+      width: 100%;
+    }
 
     &__buttons {
       display: flex;
@@ -95,6 +114,10 @@
 
       @media screen and (max-width: 1152px) {
         margin-top: 28px;
+      }
+      @media screen and (max-width: 475px) {
+        margin-top: 8px;
+        flex-direction: column;
       }
     }
 
@@ -120,6 +143,11 @@
         width: 180px;
         height: 48px;
         margin-right: 16px;
+      }
+
+      @media screen and (max-width: 475px) {
+        width: 100%;
+        margin: 8px 0;
       }
 
       &--tg, &--discord {

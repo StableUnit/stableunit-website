@@ -7,6 +7,10 @@
     margin-bottom: 76px;
   }
 
+  @media screen and (max-width: 475px) {
+    margin-bottom: 48px;
+  }
+
   &__title {
     padding-bottom: 32px;
 
@@ -32,6 +36,11 @@
     @media screen and (max-width: 768px) {
       margin-bottom: 40px;
     }
+
+    @media screen and (max-width: 475px) {
+      font-size: 15px;
+      line-height: 20px;
+    }
   }
 
   &__gift {
@@ -50,6 +59,11 @@
     @media screen and (max-width: 768px) {
       margin-top: 40px;
     }
+
+    @media screen and (max-width: 475px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 
   &__image {
@@ -62,6 +76,10 @@
     @media screen and (max-width: 768px) {
       width: 156px;
     }
+
+    @media screen and (max-width: 475px) {
+      padding-right: 8px;
+    }
   }
 
   &__instructions {
@@ -73,6 +91,10 @@
     @media screen and (max-width: 1152px) {
       flex-wrap: wrap;
       margin-top: 80px;
+    }
+
+    @media screen and (max-width: 475px) {
+      margin-top: 64px;
     }
   }
 
@@ -99,6 +121,14 @@
       height: 280px;
     }
 
+    @media screen and (max-width: 475px) {
+      min-width: 290px;
+      padding: 32px 24px;
+      height: auto;
+      background-size: 195%;
+      margin: 12px 0;
+    }
+
     &__text {
       font-weight: 700;
       font-size: 28px;
@@ -109,6 +139,12 @@
         font-size: 24px;
         line-height: 32px;
         padding-bottom: 32px;
+      }
+
+      @media screen and (max-width: 475px) {
+        font-size: 22px;
+        line-height: 30px;
+        padding-bottom: 24px;
       }
     }
 
