@@ -47,7 +47,7 @@ const Features = () => {
     ] as BlockType[];
 
     return (
-        <div className="features container">
+        <div className="features container" id="features">
             <div className="features__title title">The world needs resilient base assets</div>
 
             <div className="features__content">

@@ -11,7 +11,7 @@ const Contacts = () => {
     };
 
     return (
-        <div className="contacts container">
+        <div className="contacts container" id="community">
             <img src="./img/contacts-bg.png" alt="Background Gradient" />
             <div className="contacts__content">
                 <div className="contacts__title">Become an early member</div>

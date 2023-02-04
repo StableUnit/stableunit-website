@@ -4,7 +4,7 @@ import "./styles.scss";
 import Scroller from "../../components/Scroller";
 
 const BuiltBy = () => (
-    <div className="built-by">
+    <div className="built-by" id="built-by">
         <div className="built-by__title title">Built by</div>
         <div className="built-by__description container">
             StableUnit was founded by a world class team of crypto native supercoders and early employees of popular

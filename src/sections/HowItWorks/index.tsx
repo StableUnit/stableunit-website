@@ -64,7 +64,7 @@ const HowItWorks = () => {
     ] as BlockType[];
 
     return (
-        <div className="how-it-works container">
+        <div className="how-it-works container" id="how-it-works">
             <div className="title">How StableUnit works</div>
 
             <div className="how-it-works__content">
