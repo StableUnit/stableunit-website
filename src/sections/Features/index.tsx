@@ -2,6 +2,7 @@ import React from "react";
 
 import { FairImageIcon, UncensorableImageIcon, InclusiveImageIcon } from "../../icons";
 import Block, { BlockType } from "../../components/Block";
+import { GradientHref } from "../../components/GradientHref";
 
 import "./styles.scss";
 
@@ -11,8 +12,14 @@ const Features = () => {
             title: "Uncensorable",
             Description: () => (
                 <div>
-                    <u>Current stablecoins</u> or <u>their collateral can be seized</u>. USD-Pro is overcollateralized
-                    with uncensorable assets that nobody can take from you
+                    <GradientHref href="https://dune.com/kwizzles/usdt-usdc-bans" isExternal>
+                        Current stablecoins
+                    </GradientHref>{" "}
+                    or{" "}
+                    <GradientHref href="https://daistats.com/" isExternal>
+                        their collateral can be seized
+                    </GradientHref>
+                    . USD-Pro is overcollateralized with uncensorable assets that nobody can take from you
                 </div>
             ),
             Image: UncensorableImageIcon,

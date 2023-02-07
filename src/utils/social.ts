@@ -5,7 +5,7 @@ export const SOCIAL_NETWORKS = {
     },
     discord: {
         name: "Discord",
-        href: "https://discord.gg/puMeUhUpJf",
+        href: "https://discord.gg/WrCrCW6F4c",
     },
     medium: {
         name: "Medium",

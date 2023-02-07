@@ -3,7 +3,7 @@ import React from "react";
 import "./styles.scss";
 
 const Radical = () => (
-    <div className="radical container">
+    <div className="radical container" id="radical">
         <div className="title">Radical decentralization</div>
         <div className="radical__description">
             At the heart of radical decentralization is the idea of full transparency. On the blockchain, all

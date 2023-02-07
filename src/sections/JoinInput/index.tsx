@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { handleHrefClick } from "../../utils/click";
+
 import "./styles.scss";
 
 const JoinInput = () => {
@@ -11,14 +13,6 @@ const JoinInput = () => {
         } else {
             setEmail(undefined);
         }
-    };
-
-    const handleDocClick = () => {
-        window.open("https://forested-armchair-2f8.notion.site/Contribute-44f90fa0d929442caa884974f1100b53", "_blank");
-    };
-
-    const handleContributeClick = () => {
-        window.open("https://forested-armchair-2f8.notion.site/Contribute-44f90fa0d929442caa884974f1100b53", "_blank");
     };
 
     return (
@@ -41,11 +35,14 @@ const JoinInput = () => {
                     <div className="join-input__input-button">JOIN</div>
                 </div>
                 <div className="join-input__buttons">
-                    <div className="join-input__button" onClick={handleDocClick}>
+                    <div
+                        className="join-input__button"
+                        onClick={handleHrefClick("https://stableunit.gitbook.io/documentation/")}
+                    >
                         <span>DOCUMENTATION</span>
                     </div>
 
-                    <div className="join-input__button" onClick={handleContributeClick}>
+                    <div className="join-input__button" onClick={handleHrefClick("https://t.me/stableunit")}>
                         <span>CONTRIBUTE</span>
                     </div>
                 </div>

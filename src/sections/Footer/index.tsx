@@ -21,13 +21,13 @@ const Footer = () => (
         </div>
         <div className="footer__center">© 2023 StableUnit | All rights reserved.</div>
 
-        <div className="footer__right">
-            {LINKS.map((link) => (
-                <a key={link.text} className="footer__link" href={link.href} target="_blank" rel="noreferrer">
-                    {link.text}
-                </a>
-            ))}
-        </div>
+        {/* <div className="footer__right"> */}
+        {/*    {LINKS.map((link) => ( */}
+        {/*        <a key={link.text} className="footer__link" href={link.href} target="_blank" rel="noreferrer"> */}
+        {/*            {link.text} */}
+        {/*        </a> */}
+        {/*    ))} */}
+        {/* </div> */}
     </div>
 );
 

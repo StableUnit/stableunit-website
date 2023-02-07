@@ -2,6 +2,7 @@ import React from "react";
 
 import { LiquidationImage, LayerImage, ReserveImage } from "../../icons";
 import Block, { BlockType } from "../../components/Block";
+import { GradientHref } from "../../components/GradientHref";
 
 import "./styles.scss";
 
@@ -53,10 +54,27 @@ const HowItWorks = () => {
                         <br />
                         <br />
                     </div>
-                    <div>
-                        Documentation{"  "}Monte-Carlo{"  "}Agent simulation
+                    <div className="how-it-works__description-links">
+                        <GradientHref href="https://stableunit.gitbook.io/documentation/" isExternal>
+                            Documentation{" "}
+                        </GradientHref>{" "}
+                        <GradientHref href="https://base.stableunit.org/simulation/" isExternal>
+                            Monte-Carlo{" "}
+                        </GradientHref>{" "}
+                        <GradientHref href="https://simulation.stableunit.org/" isExternal>
+                            Agent simulation{" "}
+                        </GradientHref>
                     </div>
-                    <div>Simulation Liquidation system design Part 1 and Part 2</div>
+                    <div>
+                        Simulation Liquidation system design {/* eslint-disable-next-line max-len, prettier/prettier */}
+                        <GradientHref href="https://medium.com/stableunit/stable-unit-liquidation-system-design-1b3534b2033e" isExternal>
+                            Part 1
+                        </GradientHref>{" "}
+                        and {/* eslint-disable-next-line max-len, prettier/prettier */}
+                        <GradientHref href="https://medium.com/stableunit/liquidation-modules-overview-code-comparing-578c98657978" isExternal>
+                            Part 2
+                        </GradientHref>
+                    </div>
                 </div>
             ),
             Image: LiquidationImage,

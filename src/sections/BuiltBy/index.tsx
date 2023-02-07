@@ -1,7 +1,10 @@
 import React from "react";
 
-import "./styles.scss";
 import Scroller from "../../components/Scroller";
+import { GradientHref } from "../../components/GradientHref";
+import { handleHrefClick } from "../../utils/click";
+
+import "./styles.scss";
 
 const BuiltBy = () => (
     <div className="built-by" id="built-by">
@@ -18,9 +21,9 @@ const BuiltBy = () => (
         </Scroller>
         <div className="built-by__gift container">
             Are you a 10X Engineer? Join{" "}
-            <a href="https://discord.gg/WrCrCW6F4c" target="_blank" rel="noreferrer">
+            <GradientHref href="https://discord.gg/HZKDTgfQZv" target="_blank">
                 #dev
-            </a>
+            </GradientHref>
             , we have a gift for you
         </div>
         <div className="built-by__instructions container">
@@ -28,13 +31,20 @@ const BuiltBy = () => (
                 <div className="built-by__instruction__text">
                     Introduce yourself in the discord to start your DAO journey and get your SU DAO NFT.
                 </div>
-                <div className="built-by__instruction__button">GET SU DAO NFT</div>
+                <div
+                    className="built-by__instruction__button"
+                    onClick={handleHrefClick("https://discord.gg/WrCrCW6F4c")}
+                >
+                    GET SU DAO NFT
+                </div>
             </div>
             <div className="built-by__instruction" style={{ backgroundImage: "url('./img/step-bg.svg')" }}>
                 <div className="built-by__instruction__text">
                     For any other type of contribution or inquiry, join the Stable Unit telegram and meet the team.
                 </div>
-                <div className="built-by__instruction__button">CONTRIBUTE</div>
+                <div className="built-by__instruction__button" onClick={handleHrefClick("https://t.me/stableunit")}>
+                    CONTRIBUTE
+                </div>
             </div>
         </div>
     </div>

@@ -64,16 +64,17 @@
   }
 
   &__center {
+    position: absolute;
+    bottom: 52px;
+    left: 50%;
+    transform: translate(-50%);
+
     @media screen and (max-width: 768px) {
-      position: absolute;
-      bottom: 30px;
-      left: 50%;
-      transform: translate(-50%);
+      position: static;
+      transform: none;
     }
 
     @media screen and (max-width: 475px) {
-      position: static;
-      transform: none;
       padding: 16px 0 8px 0;
     }
   }

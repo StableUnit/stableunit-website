@@ -14,4 +14,16 @@
   @media screen and (max-width: 475px) {
     margin-bottom: 48px;
   }
+
+  &__description-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 12px;
+
+    @media screen and (max-width: 1152px) {
+      justify-content: space-around;
+    }
+  }
 }

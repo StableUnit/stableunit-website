@@ -1,0 +1,30 @@
+@import "../../styles/vars";
+
+.gradient-href {
+  text-decoration: underline;
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  border-bottom: 1px solid transparent;
+  border-image: $gradient;
+  border-image-slice: 1;
+  transition: all 50ms;
+
+  &--disabled {
+    -webkit-text-fill-color: white;
+    background: none;
+    color: white;
+    pointer-events: none;
+  }
+
+  &:hover {
+    border-width: 0;
+  }
+
+  &-text {
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

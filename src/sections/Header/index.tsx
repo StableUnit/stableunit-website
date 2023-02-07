@@ -18,7 +18,7 @@ const LINKS = [
     },
     {
         text: "Community",
-        id: "community",
+        id: "radical",
     },
 ];
 
