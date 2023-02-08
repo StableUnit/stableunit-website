@@ -79,7 +79,7 @@
   }
 
   &__join {
-    padding-bottom: 16px;
+    //padding-bottom: 16px;
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
@@ -117,7 +117,8 @@
     }
 
     &-container {
-      display: flex;
+      display: none;
+      //display: flex;
       align-items: center;
       margin: 0 auto 110px auto;
       position: relative;
@@ -228,5 +229,11 @@
     &:hover {
       border: 1px solid #101010;
     }
+  }
+}
+
+#join-input-iframe {
+  .publication-name, .publication-tagline {
+    display: none;
   }
 }

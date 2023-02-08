@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { handleHrefClick } from "../../utils/click";
 
@@ -25,6 +25,15 @@ const JoinInput = () => {
                     about its future.
                 </div>
                 <div className="join-input__join text-gradient">JOIN EARLY ACCESS WAITLIST</div>
+                <iframe
+                    id="join-input-iframe"
+                    title="join-input"
+                    src="https://stableunit.substack.com/embed"
+                    width="480"
+                    height="320"
+                    frameBorder="0"
+                    scrolling="no"
+                />
                 <div className="join-input__input-container">
                     <input
                         value={email}
