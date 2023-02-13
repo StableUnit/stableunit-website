@@ -29,8 +29,8 @@ const JoinInput = () => {
                     id="join-input-iframe"
                     title="join-input"
                     src="https://stableunit.substack.com/embed"
-                    width="480"
-                    height="320"
+                    width="400"
+                    height="120"
                     frameBorder="0"
                     scrolling="no"
                 />
