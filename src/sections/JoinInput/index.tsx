@@ -25,15 +25,7 @@ const JoinInput = () => {
                     about its future.
                 </div>
                 <div className="join-input__join text-gradient">JOIN EARLY ACCESS WAITLIST</div>
-                <iframe
-                    id="join-input-iframe"
-                    title="join-input"
-                    src="https://stableunit.substack.com/embed"
-                    width="400"
-                    height="120"
-                    frameBorder="0"
-                    scrolling="no"
-                />
+                <div id="custom-substack-embed" />
                 <div className="join-input__input-container">
                     <input
                         value={email}
