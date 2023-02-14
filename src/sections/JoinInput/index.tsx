@@ -15,6 +15,13 @@ const JoinInput = () => {
         }
     };
 
+    useEffect(() => {
+        const script = document.createElement("script");
+        script.src = "https://substackapi.com/widget.js";
+        script.async = true;
+        document.getElementsByTagName("body")[0].appendChild(script);
+    }, []);
+
     return (
         <div className="join-input container">
             <img src="./img/input-bg.png" alt="Background Gradient" />
