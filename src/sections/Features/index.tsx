@@ -35,7 +35,7 @@ const Features = () => {
                     <b>Meet zero click DeFi</b>
                 </div>
             ),
-            Image: FairImageIcon,
+            Image: () => <img className="features__wallet" src="/img/gifs/wallet.gif" />,
         },
         {
             title: "Inclusive",

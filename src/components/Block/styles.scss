@@ -84,4 +84,13 @@
   svg {
     width: 100%;
   }
+
+  img {
+    width: calc(100% - 40px);
+    border-radius: 12px;
+
+    @media screen and (max-width: 475px) {
+      width: calc(100% - 20px);
+    }
+  }
 }
