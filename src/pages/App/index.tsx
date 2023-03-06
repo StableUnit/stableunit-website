@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Header from "../../sections/Header";
 import JoinInput from "../../sections/JoinInput";
@@ -14,6 +14,12 @@ import Contacts from "../../sections/Contacts";
 import "./styles.css";
 
 const App = () => {
+    useEffect(() => {
+        if (location.pathname === "/contribute") {
+            window.open("https://g6pdjznzhhe.typeform.com/to/FAao9uaU", "_self");
+        }
+    }, []);
+
     return (
         <div className="App">
             <Header />

@@ -42,7 +42,7 @@ const BuiltBy = () => (
                 <div className="built-by__instruction__text">
                     For any other type of contribution or inquiry, join the Stable Unit telegram and meet the team.
                 </div>
-                <div className="built-by__instruction__button" onClick={handleHrefClick("https://t.me/stableunit")}>
+                <div className="built-by__instruction__button" onClick={handleHrefClick("/contribute")}>
                     CONTRIBUTE
                 </div>
             </div>

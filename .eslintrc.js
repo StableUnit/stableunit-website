@@ -55,6 +55,7 @@ module.exports = {
         "react/no-array-index-key": "off",
         "react/prop-types": "off",
         "no-unused-vars": "off",
+        "no-restricted-globals": "off",
         "no-empty-pattern": "off",
         "max-len": ["error", { code: 120 }],
     },
