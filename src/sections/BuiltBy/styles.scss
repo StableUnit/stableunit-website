@@ -130,6 +130,10 @@
       margin: 12px 0;
     }
 
+    a {
+      text-decoration: none;
+    }
+
     &__text {
       font-weight: 700;
       font-size: 28px;
@@ -156,6 +160,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      color: white;
+      text-decoration: none;
 
       background: #101010;
       border: 1px solid #FFFFFF;

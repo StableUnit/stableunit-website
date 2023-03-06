@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import Scroller from "../../components/Scroller";
 import { GradientHref } from "../../components/GradientHref";
@@ -42,9 +43,9 @@ const BuiltBy = () => (
                 <div className="built-by__instruction__text">
                     For any other type of contribution or inquiry, join the Stable Unit telegram and meet the team.
                 </div>
-                <div className="built-by__instruction__button" onClick={handleHrefClick("/contribute")}>
-                    CONTRIBUTE
-                </div>
+                <Link to="contribute" target="_blank" rel="noopener noreferrer">
+                    <div className="built-by__instruction__button">CONTRIBUTE</div>
+                </Link>
             </div>
         </div>
     </div>
