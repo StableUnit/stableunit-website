@@ -125,12 +125,12 @@
       }
     }
 
+    &__social-button,
     &__button {
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      width: 198px;
       height: 54px;
 
       font-weight: 700;
@@ -139,38 +139,8 @@
       background: #101010;
       border: 1px solid #FFFFFF;
       border-radius: 40px;
-      margin-right: 24px;
 
       transition: all 250ms;
-
-      @media screen and (max-width: 1152px) {
-        width: 180px;
-        height: 48px;
-        margin-right: 16px;
-      }
-
-      @media screen and (max-width: 475px) {
-        width: 100%;
-        margin: 8px 0;
-      }
-
-      &--tg, &--discord {
-        font-size: 18px;
-        border: none;
-
-        &:hover {
-          opacity: 0.8;
-          border: none !important;
-        }
-      }
-
-      &--tg {
-        background: #4C9DEA;
-      }
-
-      &--discord {
-        background: #414EE3;
-      }
 
       &--github {
         font-size: 18px;
@@ -186,6 +156,68 @@
 
       &:hover {
         border: 1px solid #101010;
+      }
+    }
+
+    &__social-button {
+      width: 155px;
+      margin-right: 16px;
+
+      &--tg, &--tw, &--discord {
+        font-size: 18px;
+        border: none;
+
+        &:hover {
+          opacity: 0.8;
+          border: none !important;
+        }
+      }
+
+      &--tg {
+        background: #229ED9;
+      }
+
+      &--discord {
+        background: #5865F2;
+      }
+
+      &--tw {
+        background: #1DA1F2;
+      }
+
+      @media screen and (max-width: 1152px) {
+        width: 135px;
+        height: 48px;
+        margin-right: 12px;
+
+        &--tg, &--tw, &--discord {
+          font-size: 14px;
+        }
+      }
+
+      @media screen and (max-width: 475px) {
+        width: 100%;
+        margin: 8px 0;
+
+        &--tg, &--tw, &--discord {
+          font-size: 18px;
+        }
+      }
+    }
+
+    &__button {
+      width: 198px;
+      margin-right: 24px;
+
+      @media screen and (max-width: 1152px) {
+        width: 180px;
+        height: 48px;
+        margin-right: 16px;
+      }
+
+      @media screen and (max-width: 475px) {
+        width: 100%;
+        margin: 8px 0;
       }
     }
   }

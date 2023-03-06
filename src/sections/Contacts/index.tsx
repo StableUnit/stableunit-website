@@ -1,7 +1,7 @@
 import React from "react";
 
 import { SOCIAL_NETWORKS } from "../../utils/social";
-import { DiscordIcon, GithubIcon, TgIcon } from "../../icons";
+import { DiscordIcon, GithubIcon, TgIcon, TwitterIcon } from "../../icons";
 import { handleHrefClick } from "../../utils/click";
 
 import "./styles.scss";
@@ -20,7 +20,7 @@ const Contacts = () => (
                     <div>Come and chat with the community</div>
                     <div className="contacts__section__buttons">
                         <div
-                            className="contacts__section__button contacts__section__button--discord"
+                            className="contacts__section__social-button contacts__section__social-button--discord"
                             onClick={handleHrefClick(SOCIAL_NETWORKS.discord.href)}
                         >
                             <DiscordIcon />
@@ -28,7 +28,15 @@ const Contacts = () => (
                         </div>
 
                         <div
-                            className="contacts__section__button contacts__section__button--tg"
+                            className="contacts__section__social-button contacts__section__social-button--tw"
+                            onClick={handleHrefClick(SOCIAL_NETWORKS.twitter.href)}
+                        >
+                            <TwitterIcon />
+                            <span>Twitter</span>
+                        </div>
+
+                        <div
+                            className="contacts__section__social-button contacts__section__social-button--tg"
                             onClick={handleHrefClick(SOCIAL_NETWORKS.tg.href)}
                         >
                             <TgIcon />
