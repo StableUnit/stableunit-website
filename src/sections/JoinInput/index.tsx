@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import { handleHrefClick } from "../../utils/click";
 
@@ -50,9 +51,11 @@ const JoinInput = () => {
                         <span>DOCUMENTATION</span>
                     </div>
 
-                    <div className="join-input__button" onClick={handleHrefClick("https://t.me/stableunit")}>
-                        <span>CONTRIBUTE</span>
-                    </div>
+                    <Link to="contribute" target="_blank" rel="noopener noreferrer">
+                        <div className="join-input__button">
+                            <span>CONTRIBUTE</span>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>
