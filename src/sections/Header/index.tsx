@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 
+import { ArrowDownIcon, BurgerIcon, CloseIcon } from "../../icons";
+import { HeaderDropdown } from "../../components/HeaderDropdown";
+import { ButtonGray } from "../../components/ButtonGray";
+
 import "./styles.scss";
-import { BurgerIcon, CloseIcon } from "../../icons";
 
 const LINKS = [
     {
@@ -24,6 +27,7 @@ const LINKS = [
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     const openMenu = () => {
         setIsMenuOpen(true);
@@ -42,6 +46,16 @@ const Header = () => {
         }
     };
 
+    const Tools = () => (
+        <div className="header__tools">
+            <ButtonGray onClick={() => setIsDropdownOpen(true)} className="header__address-button">
+                <div className="header__address-button__title">Tools</div>
+                <ArrowDownIcon />
+            </ButtonGray>
+            <HeaderDropdown onClose={() => setIsDropdownOpen(false)} isInline={false} visible={isDropdownOpen} />
+        </div>
+    );
+
     return (
         <>
             <div className="header container">
@@ -56,6 +70,7 @@ const Header = () => {
                             {link.text}
                         </a>
                     ))}
+                    <Tools />
                 </div>
                 <div className="header__burger" onClick={isMenuOpen ? closeMenu : openMenu}>
                     {isMenuOpen ? <CloseIcon /> : <BurgerIcon />}
@@ -69,6 +84,7 @@ const Header = () => {
                                 {link.text}
                             </div>
                         ))}
+                        <Tools />
                     </div>
                     <div className="menu-modal__fade" onClick={closeMenu} />
                 </div>

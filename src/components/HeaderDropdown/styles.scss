@@ -1,0 +1,87 @@
+@import "src/styles/vars";
+
+.header-dropdown-container {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &--visible {
+    display: block;
+  }
+}
+
+.header-dropdown {
+  background: $dark-gray;
+  border-radius: 8px;
+  width: 160px;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  overflow: hidden;
+  user-select: none;
+  z-index: 10;
+
+  &--inline {
+    position: static;
+  }
+
+  &__line {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16px;
+    cursor: pointer;
+    transition: all 250ms;
+
+    &:hover {
+      color: rgba(255,255,255, 0.8);
+      background: $dark2;
+    }
+
+    &--disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+
+      &:hover {
+        background: $dark-gray;
+        color: white;
+      }
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    &__text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      padding-left: 8px;
+
+      &--soon {
+        padding: 3px;
+        margin-left: 3px;
+
+        font-size: 10px;
+        position: relative;
+        bottom: 0;
+        background: $red;
+        border-radius: 10px;
+        color: black;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $mobile-width) {
+    right: 55px;
+    box-shadow: 0 0 0 1px $black;
+
+    &--inline {
+      box-shadow: none;
+    }
+  }
+}
