@@ -2,15 +2,31 @@ import React from "react";
 
 import "./styles.scss";
 
+const FRIENDS_WEBSITES = [
+    "alien.fi",
+    "avvy.domains",
+    "buidlerstribe.com",
+    "did.id",
+    "dokidoki.com",
+    "thedapplist.com",
+    "quickswap.exchange",
+    "florence.finance",
+    "quillaudits.com",
+    "aura.finance",
+    "bittensor.com",
+    "unison.gg",
+    "via.exchange",
+];
+
 const Friends = () => (
     <div className="friends container">
         <div className="friends__title title">Protocol friends</div>
         <div className="friends__content">
-            <img className="friends__image" src="./img/friends/ambire.png" alt="Ambire" />
-            <img className="friends__image" src="./img/friends/doki-doki.png" alt="Doki Doki" />
-            <img className="friends__image" src="./img/friends/aura-finance.png" alt="Aura Finance" />
-            <img className="friends__image" src="./img/friends/via.png" alt="Via" />
-            <img className="friends__image" src="./img/friends/dao-helper.png" alt="DAO Helper" />
+            {FRIENDS_WEBSITES.map((href) => (
+                <a href={`https://${href}`} target="_blank" rel="noreferrer">
+                    <img className="friends__image" src={`./img/partners/${href}.svg`} alt={href} />
+                </a>
+            ))}
         </div>
     </div>
 );
