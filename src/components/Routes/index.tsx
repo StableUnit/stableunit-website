@@ -1,7 +1,8 @@
 import React from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 import MainPage from "../../pages/MainPage";
+import NotFound from "../../pages/NotFound";
 
 export const Routes = () => (
     <Switch>
@@ -17,5 +18,9 @@ export const Routes = () => (
                 return null;
             }}
         />
+
+        <Route path="*">
+            <NotFound />
+        </Route>
     </Switch>
 );

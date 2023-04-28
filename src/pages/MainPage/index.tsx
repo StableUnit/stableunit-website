@@ -13,7 +13,7 @@ import Contacts from "../../sections/Contacts";
 
 import "./styles.css";
 
-const App = () => {
+const MainPage = () => {
     return (
         <div className="main-page">
             <Header />
@@ -30,4 +30,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default MainPage;
