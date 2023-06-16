@@ -14,8 +14,9 @@ const HowItWorks = () => {
                     StableUnit utilizes the battle-tested CDP model of MakerDAO and drastically improves it.
                     <br />
                     <br />
-                    Instead of letting the reserve idle, StableUnit generates yield by depositing it in reputable
-                    protocols such as Yearn, Compound and Curve.
+                    The collateral works for the user. StableUnit is able, on behalf of the users, to use liquid staking
+                    solutions. Combined with liquidation gains and lending fees, the overall yield exceeds what LSTs
+                    alone are capable of providing.
                     <br />
                     <br />
                     The next generation stablecoin is here and it entitles every single holder of USD-Pro to part of the
