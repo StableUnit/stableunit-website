@@ -41,7 +41,7 @@ const Features = () => {
             title: "Inclusive",
             Description: () => (
                 <div>
-                    Fundamental DeFi assets have to be owned by the whole crypto community not by a few VCs.
+                    Fundamental assets have to be owned by the whole crypto community not by a few VCs.
                     StableUnitDAO is governed by both social capital and financial capital so that millions of people
                     will control it.
                     <br />
