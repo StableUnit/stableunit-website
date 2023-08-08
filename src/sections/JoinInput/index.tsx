@@ -27,10 +27,9 @@ const JoinInput = () => {
         <div className="join-input container">
             <img src="./img/input-bg.png" alt="Background Gradient" />
             <div className="join-input__content">
-                <div className="join-input__title">Decentralized money that you truly own</div>
+                <div className="join-input__title">Break the barriers of capital efficiency</div>
                 <div className="join-input__description">
-                    The next generation stablecoin, overcollateralized with uncensorable assets where you get to decide
-                    about its future.
+                    The next generation stablecoin, overcollateralized with liquidity pool (LP) tokens and liquid staking tokens.
                 </div>
                 <div className="join-input__join text-gradient">JOIN EARLY ACCESS WAITLIST</div>
                 <div id="custom-substack-embed" />
