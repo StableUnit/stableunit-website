@@ -72,20 +72,18 @@ const StablecoinChart = () => {
 
     return (
         <div className="container">
-            <div className="title">DeFi is in danger</div>
+            <div className="title">One step further for capital efficiency</div>
             <div className="stablecoin-chart">
                 <div className="stablecoin-chart__content">
                     <div className="stablecoin-chart__content__description">
-                        The collapse of centralized organizations proved the importance of decentralization. DeFi is
-                        undeniably the future of finance. But DeFi itself is in danger because of the centralization of
-                        base assets.
+                        The explosive growth of liquid staking over the past years proved the market demand for tools that allow greater capital efficiency. 
+                        Users do not need to lock their ETH to earn staking rewards as they can simply hold liquid staking tokens instead to earn directly in their wallets or to use them in DeFi.
                     </div>
                     <div className="stablecoin-chart__content__description">
-                        95% of stablecoins can be frozen in one single transaction by their issuers.
+                       After providing liquidity in protocols such as Curve or Balancer and boosting rewards through Convex and Aura, users get liquidity pool (LP) tokens. Yet, in most cases, they are unable to use them in DeFi.
                     </div>
                     <div className="stablecoin-chart__content__description">
-                        USD-Pro is a stablecoin from StableUnitDAO that cannot be frozen. It is overcollateralized with
-                        uncensorable assets that nobody can take from you.
+                        StableUnit allows these token holders to borrow USD-Pro against them, while giving access to additional revenue sources directly in their wallets.
                     </div>
                 </div>
                 <div className="stablecoin-chart__chart">
