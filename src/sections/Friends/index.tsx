@@ -23,7 +23,7 @@ const Friends = () => (
         <div className="friends__title title">Protocol friends</div>
         <div className="friends__content">
             {FRIENDS_WEBSITES.map(({ name, width }) => (
-                <a href={`https://${name}`} target="_blank" rel="noreferrer">
+                <a href={`https://${name}`} target="_blank" rel="noreferrer" key={name}>
                     <img width={width} className="friends__image" src={`./img/partners/${name}.svg`} alt={name} />
                 </a>
             ))}

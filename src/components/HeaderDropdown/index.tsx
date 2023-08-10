@@ -27,6 +27,7 @@ const HeaderDropdownContent = ({ isInline, className }: Omit<HeaderDropdownProps
                 <div
                     className={cn("header-dropdown__line", { "header-dropdown__line--disabled": v.disabled })}
                     onClick={v.url ? handleHrefClick(v.url) : undefined}
+                    key={v.name}
                 >
                     <div className="header-dropdown__line__text">{v.name}</div>
                     {v.disabled && <div className="header-dropdown__line__text--soon">soon</div>}

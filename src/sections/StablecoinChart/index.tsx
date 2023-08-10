@@ -91,25 +91,6 @@ const StablecoinChart = () => {
                         additional revenue sources directly in their wallets.
                     </div>
                 </div>
-                <div className="stablecoin-chart__chart">
-                    <PieChart width={isMobile ? 250 : 400} height={isMobile ? 220 : 250}>
-                        <Pie
-                            activeIndex={activeIndex}
-                            activeShape={renderActiveShape}
-                            data={data}
-                            cx="50%"
-                            cy="50%"
-                            innerRadius={isMobile ? 50 : 60}
-                            outerRadius={isMobile ? 65 : 80}
-                            dataKey="value"
-                            onMouseEnter={onPieEnter}
-                        >
-                            {data.map((entry, index) => (
-                                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                            ))}
-                        </Pie>
-                    </PieChart>
-                </div>
             </div>
         </div>
     );
