@@ -29,7 +29,8 @@ const JoinInput = () => {
             <div className="join-input__content">
                 <div className="join-input__title">Break the barriers of capital efficiency</div>
                 <div className="join-input__description">
-                    The next generation stablecoin, overcollateralized with liquidity pool (LP) tokens and liquid staking tokens.
+                    The next generation stablecoin, overcollateralized with liquidity pool (LP) tokens and liquid
+                    staking tokens.
                 </div>
                 <div className="join-input__join text-gradient">JOIN EARLY ACCESS WAITLIST</div>
                 <div id="custom-substack-embed" />

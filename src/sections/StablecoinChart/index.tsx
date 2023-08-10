@@ -76,14 +76,19 @@ const StablecoinChart = () => {
             <div className="stablecoin-chart">
                 <div className="stablecoin-chart__content">
                     <div className="stablecoin-chart__content__description">
-                        The explosive growth of liquid staking over the past years proved the market demand for tools that allow greater capital efficiency. 
-                        Users do not need to lock their ETH to earn staking rewards as they can simply hold liquid staking tokens instead to earn directly in their wallets or to use them in DeFi.
+                        The explosive growth of liquid staking over the past years proved the market demand for tools
+                        that allow greater capital efficiency. Users do not need to lock their ETH to earn staking
+                        rewards as they can simply hold liquid staking tokens instead to earn directly in their wallets
+                        or to use them in DeFi.
                     </div>
                     <div className="stablecoin-chart__content__description">
-                       After providing liquidity in protocols such as Curve or Balancer or yield optimizers like Convex and Aura, users get liquidity pool (LP) tokens. Yet, in most cases, they are unable leverage againt them.
+                        After providing liquidity in protocols such as Curve or Balancer or yield optimizers like Convex
+                        and Aura, users get liquidity pool (LP) tokens. Yet, in most cases, they are unable leverage
+                        againt them.
                     </div>
                     <div className="stablecoin-chart__content__description">
-                        StableUnit allows these token holders to borrow USD-Pro against them, while giving access to additional revenue sources directly in their wallets.
+                        StableUnit allows these token holders to borrow USD-Pro against them, while giving access to
+                        additional revenue sources directly in their wallets.
                     </div>
                 </div>
                 <div className="stablecoin-chart__chart">
