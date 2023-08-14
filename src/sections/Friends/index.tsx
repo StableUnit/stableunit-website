@@ -3,16 +3,15 @@ import React from "react";
 import "./styles.scss";
 
 const FRIENDS_WEBSITES = [
-    { name: "alien.fi", width: 240 },
     { name: "avvy.domains", width: 240 },
     { name: "buidlerstribe.com", width: 140 },
     { name: "did.id", width: 140 },
     { name: "dokidoki.com", width: 290 },
     { name: "thedapplist.com", width: 130 },
-    { name: "quickswap.exchange", width: 310 },
     { name: "florence.finance", width: 110 },
     { name: "quillaudits.com", width: 80 },
     { name: "aura.finance", width: 80 },
+    { name: "quickswap.exchange", width: 310 },
     { name: "bittensor.com", width: 80 },
     { name: "unison.gg", width: 80 },
     { name: "via.exchange", width: 80 },
