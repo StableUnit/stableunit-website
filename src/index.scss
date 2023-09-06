@@ -43,6 +43,7 @@ body {
 }
 
 .container {
+  position: relative;
   max-width: 1220px;
   width: calc(100% - 80px);
   margin: 0 auto;
