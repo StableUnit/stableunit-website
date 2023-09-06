@@ -12,6 +12,7 @@ import HowItWorks from "../../sections/HowItWorks";
 import Contacts from "../../sections/Contacts";
 
 import "./styles.css";
+import SupportedBy from "../../sections/SupportedBy";
 
 const MainPage = () => {
     return (
@@ -20,9 +21,8 @@ const MainPage = () => {
             <JoinInput />
             <Features />
             <BuiltBy />
+            <SupportedBy />
             <Friends />
-            <HowItWorks />
-            <Radical />
             <Contacts />
             <Footer />
         </div>

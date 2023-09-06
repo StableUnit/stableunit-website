@@ -2,7 +2,7 @@
 
 .friends {
   position: relative;
-  margin-bottom: 150px;
+  margin-bottom: 80px;
 
   @media screen and (max-width: 1152px) {
     margin-bottom: 100px;
@@ -31,7 +31,7 @@
   }
 
   &__image {
-    padding: 20px;
+    padding: 10px;
     transition: all 250ms;
 
     &:hover {
