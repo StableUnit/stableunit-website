@@ -18,7 +18,6 @@ const MainPage = () => {
         <div className="main-page">
             <Header />
             <JoinInput />
-            <StablecoinChart />
             <Features />
             <BuiltBy />
             <Friends />

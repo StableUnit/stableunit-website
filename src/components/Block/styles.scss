@@ -70,7 +70,6 @@
 
   &__content {
     flex: 1;
-    padding-right: 20px;
   }
 
   &__image {
@@ -79,6 +78,7 @@
     align-items: center;
     justify-content: center;
     min-width: 250px;
+    margin-right: 20px;
   }
 
   svg {
@@ -86,7 +86,7 @@
   }
 
   img {
-    width: calc(100% - 40px);
+    width: calc(100% - 150px);
     border-radius: 12px;
 
     @media screen and (max-width: 475px) {
