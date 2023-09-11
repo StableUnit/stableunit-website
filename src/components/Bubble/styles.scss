@@ -12,11 +12,11 @@
     width: 250px;
   }
 
-  @media screen and (max-width: 980px) {
-    width: 195px;
+  @media screen and (max-width: 1023px) {
+    width: 205px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     display: none;
   }
 
@@ -27,20 +27,25 @@
     letter-spacing: 0.02em;
     text-align: center;
 
-    @media screen and (max-width: 980px) {
+    @media screen and (max-width: 1023px) {
       font-size: 15px;
       line-height: 36px;
     }
   }
 
   &__description {
-    padding: 24px 16px 0 16px;
+    padding: 16px 16px 0 16px;
     font-size: 15px;
     font-weight: 400;
     line-height: 18px;
     text-align: left;
 
-    @media screen and (max-width: 980px) {
+    @media screen and (min-width: 1440px) {
+      padding: 24px 16px 0 16px;
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: 1023px) {
       padding: 16px 12px 0 12px;
       font-size: 13px;
     }

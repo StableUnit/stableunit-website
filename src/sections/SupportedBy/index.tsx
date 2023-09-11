@@ -10,7 +10,7 @@ const SupportedBy = () => (
     <div className="supported-by" id="supported-by">
         <div className="supported-by__title title">Supported by</div>
         <Scroller>
-            {Array.from(Array(7).keys()).map((n) => (
+            {Array.from(Array(4).keys()).map((n) => (
                 <img
                     key={n}
                     className="supported-by__image"

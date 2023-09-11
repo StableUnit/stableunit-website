@@ -11,8 +11,6 @@ import "./styles.scss";
 const JoinInput = () => {
     const [email, setEmail] = useState<string>();
     const { width } = useDimensions();
-    const isSSize = width <= 768;
-    const isMSize = width > 768 && width <= 1152;
     const isLSize = width > 1152;
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -71,19 +69,19 @@ const JoinInput = () => {
                     title="Make it easy to use"
                     description="DeFi is unneccesarily complex."
                     top={isLSize ? 100 : 50}
-                    left={isLSize ? -30 : -15}
+                    left={-15}
                 />
                 <Bubble
                     title="Share it with everyone"
                     description="Large stablecoin providers like Tether and Circle make billions but don't share profits with their users."
                     bottom={isLSize ? 140 : 100}
-                    left={isLSize ? -40 : -20}
+                    left={isLSize ? -30 : -20}
                 />
                 <Bubble
                     title="Make it easy to integrate"
                     description="Rebasing tokens like stETH and AMPL make integration with other DeFi protocol a development nightmare"
                     bottom={isLSize ? 160 : 120}
-                    right={isLSize ? -40 : -20}
+                    right={isLSize ? -30 : -20}
                 />
             </div>
         </div>
