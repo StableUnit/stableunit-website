@@ -5,6 +5,7 @@ import { HeaderDropdown } from "../../components/HeaderDropdown";
 import { ButtonGray } from "../../components/ButtonGray";
 
 import "./styles.scss";
+import { handleHrefClick } from "../../utils/click";
 
 const LINKS = [
     {
@@ -59,7 +60,7 @@ const Header = () => {
     return (
         <>
             <div className="header container">
-                <div className="header__left">
+                <div className="header__left" onClick={handleHrefClick("/", "_self")}>
                     <img src="./logo.svg" alt="" loading="lazy" />
                     <div>StableUnit</div>
                 </div>

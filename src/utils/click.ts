@@ -1,3 +1,5 @@
-export const handleHrefClick = (href: string) => () => {
-    window.open(href, "_blank");
-};
+export const handleHrefClick =
+    (href: string, target = "_blank") =>
+    () => {
+        window.open(href, target);
+    };
