@@ -13,7 +13,7 @@ const SupportedBy = () => (
                     <img
                         className="supported-by__image"
                         src="./img/support/fundamental.png"
-                        height={74}
+                        height={82}
                         alt="Fundamental Labs"
                     />
                 </div>
@@ -21,15 +21,21 @@ const SupportedBy = () => (
             <div className="supported-by__section">
                 <div className="supported-by__section__title">With participation from</div>
                 <div className="supported-by__section__content">
-                    <img className="supported-by__image" src="./img/support/mexc.png" height={70} alt="MEXC Ventures" />
+                    <img className="supported-by__image" src="./img/support/mexc.png" height={65} alt="MEXC Ventures" />
                     <img className="supported-by__image" src="./img/support/NxGen.png" height={34} alt="NxGen" />
-                    <img className="supported-by__image" src="./img/support/ngc.png" height={43} alt="NGC Ventures" />
+                    <img className="supported-by__image" src="./img/support/ngc.png" height={45} alt="NGC Ventures" />
                 </div>
             </div>
             <div className="supported-by__section">
                 <div className="supported-by__section__title">Angels in the community</div>
                 <div className="supported-by__section__content">
-                    <img className="supported-by__image" src="./img/support/1inch.png" height={74} alt="1Inch" />
+                    <img
+                        className="supported-by__image"
+                        src="./img/support/1inch.png"
+                        height={74}
+                        alt="1Inch"
+                        style={{ opacity: 0.7 }}
+                    />
                     <img className="supported-by__image" src="./img/support/dextools.png" height={74} alt="DexTools" />
                     <img className="supported-by__image" src="./img/support/gearbox.png" height={56} alt="Gearbox" />
                     <img className="supported-by__image" src="./img/support/KUCOIN.png" height={35} alt="KUCOIN" />
