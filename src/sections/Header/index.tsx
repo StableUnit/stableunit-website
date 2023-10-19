@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import cn from "classnames";
 
 import { ArrowDownIcon, BurgerIcon, CloseIcon } from "../../icons";
-import { HeaderDropdown } from "../../components/HeaderDropdown";
+import { DROPDOWN_LINKS, HeaderDropdown } from "../../components/HeaderDropdown";
 import { ButtonGray } from "../../components/ButtonGray";
 
 import "./styles.scss";
@@ -17,12 +18,8 @@ const LINKS = [
         id: "built-by",
     },
     {
-        text: "How it works",
-        id: "how-it-works",
-    },
-    {
         text: "Community",
-        id: "radical",
+        id: "community",
     },
 ];
 
@@ -85,7 +82,17 @@ const Header = () => {
                                 {link.text}
                             </div>
                         ))}
-                        <Tools />
+                        {DROPDOWN_LINKS.map((link) => (
+                            <div
+                                key={link.name}
+                                className={cn("menu-modal__content__link", {
+                                    "menu-modal__content__link--disabled": link.disabled,
+                                })}
+                                onClick={link.url ? handleHrefClick(link.url) : undefined}
+                            >
+                                {link.name}
+                            </div>
+                        ))}
                     </div>
                     <div className="menu-modal__fade" onClick={closeMenu} />
                 </div>

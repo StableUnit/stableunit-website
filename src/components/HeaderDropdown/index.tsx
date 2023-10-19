@@ -14,7 +14,7 @@ interface HeaderDropdownProps {
 
 type LinkType = { name: string; url?: string; disabled: boolean };
 
-const LINKS = [
+export const DROPDOWN_LINKS = [
     { name: "Safe Transfer", url: "https://safetransfer.cash", disabled: false },
     { name: "DAO", disabled: true },
     { name: "Insight", disabled: true },
@@ -23,7 +23,7 @@ const LINKS = [
 const HeaderDropdownContent = ({ isInline, className }: Omit<HeaderDropdownProps, "visible" | "onClose">) => {
     return (
         <div className={cn("header-dropdown", className, { "header-dropdown--inline": isInline })}>
-            {LINKS.map((v) => (
+            {DROPDOWN_LINKS.map((v) => (
                 <div
                     className={cn("header-dropdown__line", { "header-dropdown__line--disabled": v.disabled })}
                     onClick={v.url ? handleHrefClick(v.url) : undefined}
