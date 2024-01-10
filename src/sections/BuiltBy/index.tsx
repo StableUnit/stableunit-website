@@ -20,7 +20,7 @@ const BuiltBy = () => (
         </Scroller>
         <div className="built-by__gift container">
             Are you a 10X Engineer? Join{" "}
-            <GradientHref href="https://discord.gg/HZKDTgfQZv" target="_blank">
+            <GradientHref href="https://discord.gg/JVhqay3mdQ" target="_blank">
                 #dev
             </GradientHref>
             , we have a gift for you
