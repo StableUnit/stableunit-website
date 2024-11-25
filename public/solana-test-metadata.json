@@ -1,0 +1,16 @@
+{
+  "name": "test SuDAO",
+  "symbol": "tSuDAO",
+  "description": "Test token for SuDAO on Solana devnet",
+  "image": "https://testnet.stableunit.org/logo96.png",
+  "seller_fee_basis_points": 0,
+  "attributes": [],
+  "properties": {
+    "files": [
+      {
+        "uri": "https://testnet.stableunit.org/logo96.png",
+        "type": "image/png"
+      }
+    ]
+  }
+}
