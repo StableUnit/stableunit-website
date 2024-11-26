@@ -16,7 +16,7 @@ type LinkType = { name: string; url?: string; disabled: boolean };
 
 export const DROPDOWN_LINKS = [
     { name: "Safe Transfer", url: "https://safetransfer.cash", disabled: false },
-    { name: "DAO", url: "https://passport.stableunit.org/" , disabled: false },
+    { name: "DAO", url: "https://passport.stableunit.org/", disabled: false },
     { name: "Insight", disabled: true },
 ] as LinkType[];
 
