@@ -21,6 +21,10 @@ const LINKS = [
         text: "Community",
         id: "community",
     },
+    {
+        text: "Jobs",
+        href: "/jobs",
+    },
 ];
 
 const Header = () => {
@@ -64,7 +68,12 @@ const Header = () => {
 
                 <div className="header__right">
                     {LINKS.map((link) => (
-                        <a key={link.text} className="header__link" href={`#${link.id}`} onClick={openLink(link.id)}>
+                        <a
+                            key={link.text}
+                            className="header__link"
+                            href={link.href ?? `#${link.id}`}
+                            onClick={link.id ? openLink(link.id) : undefined}
+                        >
                             {link.text}
                         </a>
                     ))}
@@ -78,7 +87,11 @@ const Header = () => {
                 <div className="menu-modal">
                     <div className="menu-modal__content">
                         {LINKS.map((link) => (
-                            <div key={link.text} className="menu-modal__content__link" onClick={openLink(link.id)}>
+                            <div
+                                key={link.text}
+                                className="menu-modal__content__link"
+                                onClick={openLink(link.href ?? link.id)}
+                            >
                                 {link.text}
                             </div>
                         ))}

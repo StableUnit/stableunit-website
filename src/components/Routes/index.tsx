@@ -19,6 +19,17 @@ export const Routes = () => (
             }}
         />
 
+        <Route
+            exact
+            path="/jobs"
+            component={() => {
+                window.location.href =
+                    // eslint-disable-next-line max-len
+                    "https://docs.google.com/document/d/1XjcLgAz_Cy-H7t3IjDpLmFjE-_rgiNHMJBAPKj0oCwI/edit?tab=t.b9ph2cdrlppm";
+                return null;
+            }}
+        />
+
         <Route path="*">
             <NotFound />
         </Route>
