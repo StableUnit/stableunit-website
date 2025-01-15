@@ -25,7 +25,7 @@ export const Routes = () => (
             component={() => {
                 window.location.href =
                     // eslint-disable-next-line max-len
-                    "https://docs.google.com/document/d/1XjcLgAz_Cy-H7t3IjDpLmFjE-_rgiNHMJBAPKj0oCwI/edit?tab=t.b9ph2cdrlppm";
+                    "https://level-tamarillo-3c5.notion.site/Job-Board-17c07943f264800f8639d37ffe1b9458";
                 return null;
             }}
         />
