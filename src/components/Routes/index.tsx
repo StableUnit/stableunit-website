@@ -24,8 +24,16 @@ export const Routes = () => (
             path="/jobs"
             component={() => {
                 window.location.href =
-                    // eslint-disable-next-line max-len
                     "https://level-tamarillo-3c5.notion.site/Job-Board-17c07943f264800f8639d37ffe1b9458";
+                return null;
+            }}
+        />
+
+        <Route
+            exact
+            path="/demo"
+            component={() => {
+                window.location.href = "https://stablepro.netlify.app/";
                 return null;
             }}
         />
