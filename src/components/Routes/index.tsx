@@ -33,7 +33,7 @@ export const Routes = () => (
             exact
             path="/demo"
             component={() => {
-                window.location.href = "https://stablepro.netlify.app/";
+                window.location.href = "https://feat-new-design--stablepro.netlify.app/";
                 return null;
             }}
         />
