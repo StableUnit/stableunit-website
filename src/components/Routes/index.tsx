@@ -31,6 +31,15 @@ export const Routes = () => (
 
         <Route
             exact
+            path="/docs"
+            component={() => {
+                window.location.href = "https://alexanders-organization-61.gitbook.io/su2";
+                return null;
+            }}
+        />
+
+        <Route
+            exact
             path="/demo"
             component={() => {
                 window.location.href = "https://feat-new-design--stablepro.netlify.app/";
